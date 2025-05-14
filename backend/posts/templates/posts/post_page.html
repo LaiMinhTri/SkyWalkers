@@ -1,0 +1,17 @@
+{% extends 'layout.html'%}
+
+{% block title%}
+    {{post.title}}
+{% endblock %}
+
+{% block content%}
+    <section> 
+        <a href="{{ post.project_document.url }}" download>
+         📄 Click here to download the file
+        </a>
+
+        <h1>{{post.title}}</h1>
+        <p>{{post.date}}</p>
+        <p>{{post.body}}</p>
+    </section>
+{% endblock %}
